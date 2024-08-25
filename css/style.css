@@ -35,7 +35,6 @@ body {
 
 /* heading */
 .main-head {
-    background-color: #12110A;
     text-align: center;
     color: #FFCF00;
 }
@@ -49,7 +48,6 @@ body {
 
 /* navbar */
 .main-nav {
-    background-color: #12110A;
     text-align: center;
 }
 
@@ -79,10 +77,6 @@ body {
 }
 
 /* body */
-.main-body {
-    background-color: #12110A;
-}
-
 .main-body .dtl-box {
     display: none;
     margin: 20px;
