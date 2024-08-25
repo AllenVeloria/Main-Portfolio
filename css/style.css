@@ -4,11 +4,12 @@ body {
     margin: 0;
     padding: 0;
     height: 100%;
-    background-color: #F4EEE0;
+    background-color: #12110A;
     display: flex;
     justify-content: center;
     align-items: center;
     font-family: "Titillium Web", sans-serif;
+    color: #FFFFFF;
 }
 
 .grid-container {
@@ -19,20 +20,23 @@ body {
     margin: 100px;
 }
 
+/* heading */
 .main-head {
-    background-color: greenyellow;
-    padding: 20px 0;
+    background-color: #12110A;
     text-align: center;
-    font-weight: 700;
-    font-size: 2rem;
+    color: #FFCF00;
 }
 
 .main-head h1 {
     margin: 0;
+    padding: 20px 0;
+    font-weight: 700;
+    font-size: 5rem;
 }
 
+/* navbar */
 .main-nav {
-    background-color: grey;
+    background-color: #12110A;
     text-align: center;
 }
 
@@ -48,11 +52,25 @@ body {
     padding: 30px 20px;
 }
 
-.main-body {
-    background-color: aqua;
+.main-nav li a {
+    color: #FFFFFF;
+    text-decoration: none;
+    cursor: pointer;
+    font-weight: 700;
 }
 
-.main-body div {
+.main-nav li a:hover {
+    color: #FFCF00;
+    text-decoration: underline;
+    font-size: 1.25em;
+}
+
+/* body */
+.main-body {
+    background-color: #12110A;
+}
+
+.main-body .dtl-box {
     display: none;
     margin: 20px;
 }
@@ -64,21 +82,42 @@ body {
 .main-body h2 {
     text-align: center;
     font-size: 2em;
-    margin: 20px 0 0 0;
+    margin: 20px 0 20px 0;
+    font-weight: 700;
 }
 
-/* work */
-.work .body-title {
+.main-body .body-title {
+    color: #FFCF00;
     font-weight: 700;
     font-size: 1em;
 }
 
-.work .title-lrg{
+.main-body .title-lrg{
     font-size: 1.25em;
     font-style: italic;
     text-decoration: underline;
 }
 
+/* personal details */
+.main-body .personal .personal-info {
+    margin: 0;
+    padding: 10px 0;
+    border-bottom: 1px solid rgb(65, 65, 65);
+}
+
+/* projects details */
+.main-body .projects .card {
+    margin: 0 0 20px 0;
+}
+
+/* skills details */
+.main-body .skills .skills-dtls {
+    margin: 20px 0px;
+}
+
+.main-body .skills .skills-dtls .skill-card {
+    margin: 20px 0px;
+}
 
 /* Media Queries */
 @media (max-width : 1200px) {
