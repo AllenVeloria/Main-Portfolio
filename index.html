@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Allen Veloria</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <div class="grid-container">
+        <header class="main-head">
+            <h1>Allen Veloria</h1>
+        </header>
+    
+        <nav class="main-nav">
+            <ul>
+                <li><a href="#" data-id="1" class="nav-button">Personal</a></li>
+                <li><a href="#" data-id="2" class="nav-button">Work Experience</a></li>
+                <li><a href="#" data-id="3" class="nav-button">Projects</a></li>
+                <li><a href="#" data-id="4" class="nav-button">Contacts</a></li>
+                <li><a href="#" data-id="5" class="nav-button">Download Resume</a></li>
+            </ul>
+        </nav>
+
+        <main class="main-body">
+            <!-- personal info -->
+            <div class="personal">
+                <h2>Personal Details</h2>    
+                <p class="body-title">Address : </p>
+                <p>Rosario Pasig City</p>
+                <p class="body-title">Education : </p>
+                <p>Rosario Pasig City</p>
+                <p class="body-title">College Course : </p>
+                <p>Rosario Pasig City</p>
+            </div>
+
+            <!-- work experience -->
+            <div class="active work">
+                <h2>Work Experience</h2>    
+                <!-- 2nd company -->
+                <p class="body-title title-lrg">Allianz PNB Life | Nov 2022 - Present</p>
+                <p class="body-title">System Analyst - Application Support (Technical Lead) | Apr 2024 - Present</p>
+                <ul>
+                    <li>Technical Lead for L2 Application Support Team</li>
+                    <li>Provided Code reviews, Investigations, Knowledge Transfers, and Technical Analysis for the L2 Support Team</li>
+                </ul>
+
+                <p class="body-title">Application Support Analyst (Technical Lead) | Nov 2022 - Apr 2024</p>
+                <ul>
+                    <li>Guided the L2 Manage Services in providing support by reviewing codes, answering inquiries, performing knowledge transfers, investigations, etc. for Allianz Core Systems.</li>
+                    <li>Created detailed Scripts and Documentation for L2 Manage Services for fixing Production-related issues.</li>
+                    <li>Provided support to business users if needed for urgent production requests/incidents.</li>
+                    <li>Created automated scripts for extraction of User's needed information.</li>
+                    <li>Created / Updated the processes of L2 Manage Support in handling user requests.</li>
+                    <li>Reviewed and Approved data change/fix requests for movement to test and production environment.</li>
+                    <li>Conducted knowledge transfer sessions to L2 Manage Services about Core System processes and Business Rules.</li>
+                </ul>
+
+                <!-- 1st company -->
+                <p class="body-title title-lrg">Computer Professionals Inc. | Aug 2019 - Nov 2022</p>
+                <p class="body-title">Oracle Developer | May 2022 - Nov 2022</p>
+                <ul>
+                    <li>Deployed in Allianz PNB Life as an Oracle Developer for the Products & Partnership development team.</li>
+                    <li>Contributed to System enhancements and development of new products and funds.</li>
+                    <li>Supported the team lead for the documentation of changes for the deployment to production.</li>
+                    <li>Provided knowledge transfer sessions for the newly deployed changes for funds/plans.</li>
+                    <li>Involved in the deployment to the production of 3 Allianz funds/plans.</li>
+                </ul>
+
+                <p class="body-title">Application Support Analyst | Feb 2020 - May 2022</p>
+                <ul>
+                    <li>Deployed in Allianz PNB Life as an Application Support for Allianz Core Systems.</li>
+                    <li>Focused on maintaining the correct production data by doing data fixes, incident investigations, data extractions, supporting business user concerns, and meeting SLAs and targets.</li>
+                    <li>Became the main support for the Policy contract, Compensation, and Distribution concerns and issues.</li>
+                    <li>Provided knowledge transfer sessions to new hires of the team.</li>
+                    <li>Closed 1000+ tickets worth of data fixes, incidents, and data extractions.</li>
+                </ul>
+
+                <p class="body-title">Junior Oracle Developer | Sep 2019 - Feb 2020</p>
+                <ul>
+                    <li>Deployed in CPI Special Projects team as an Oracle Developer.</li>
+                    <li>Focused on creating automated reports that used the database data for the newly developed system.</li>
+                    <li>Created Oracle procedures, functions, and reports that will be called and used by the system.</li>
+                </ul>
+
+                <p class="body-title">Developer Trainee | Aug 2019 - Sep 2019</p>
+                <ul>
+                    <li>Gained training and Certification for the following:</li>
+                        <ul>
+                            <li>Java Programming</li>
+                            <li>SQL and PLSQL</li>
+                            <li>Jasper iReport</li>
+                        </ul>
+                </ul>
+
+            </div>
+
+            <!-- projects -->
+            <div class="projects">
+                <h2>Project</h2>  
+                <p>
+                In this layout, we display the areas in source order for any screen less
+                that 500 pixels wide. We go to a two column layout, and then to a three
+                column layout by redefining the grid, and the placement of items on the
+                grid.
+                </p>
+            </div>
+
+            <!-- contact details -->
+            <div class="contact">
+                <h2>Contact Details</h2>  
+                <p>
+                In this layout, we display the areas in source order for any screen less
+                that 500 pixels wide. We go to a two column layout, and then to a three
+                column layout by redefining the grid, and the placement of items on the
+                grid.
+                </p>
+            </div>
+
+            <!-- download resume -->
+            <div class="resume">
+                <p>
+                In this layout, we display the areas in source order for any screen less
+                that 500 pixels wide. We go to a two column layout, and then to a three
+                column layout by redefining the grid, and the placement of items on the
+                grid.
+                </p>
+            </div>
+        </main>
+    </div>
+
+    <script>
+        document.querySelectorAll('nav a')
+        .forEach(e => e.addEventListener('click', _ => change(e.dataset.id)))
+
+
+        function change(n) {
+            let panels = document.querySelectorAll('main div')
+            panels.forEach(p => p.classList.remove('active'))
+            panels[n - 1].classList.add('active')
+        }
+    </script>
+</body>
+</html>
