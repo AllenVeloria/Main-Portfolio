@@ -12,12 +12,25 @@ body {
     color: #FFFFFF;
 }
 
+/* universal */
 .grid-container {
     display: grid;
     gap: 10px;
     width: 70%;
     grid-template-columns: 1fr;
     margin: 100px;
+}
+
+.body-title {
+    color: #FFCF00;
+    font-weight: 700;
+    font-size: 1em;
+}
+
+.title-lrg {
+    font-size: 1.25em;
+    font-style: italic;
+    text-decoration: underline;
 }
 
 /* heading */
@@ -29,7 +42,7 @@ body {
 
 .main-head h1 {
     margin: 0;
-    padding: 20px 0;
+    padding: 10px 0;
     font-weight: 700;
     font-size: 5rem;
 }
@@ -86,18 +99,6 @@ body {
     font-weight: 700;
 }
 
-.main-body .body-title {
-    color: #FFCF00;
-    font-weight: 700;
-    font-size: 1em;
-}
-
-.main-body .title-lrg{
-    font-size: 1.25em;
-    font-style: italic;
-    text-decoration: underline;
-}
-
 /* personal details */
 .main-body .personal .personal-info {
     margin: 0;
@@ -121,10 +122,6 @@ body {
 
 /* Media Queries */
 @media (max-width : 1200px) {
-    body {
-      background-color: powderblue;
-    }
-
     .grid-container {
         width: 80%;
     }
